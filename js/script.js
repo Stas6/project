@@ -33,7 +33,7 @@ console.log(arr[1]);  */
 //document.write(answers);
 //console.log(typeof(answers));
 
-const category = 'toys';
+//const category = 'toys';
 //console.log('https://someurl.com' + category) + '/'  asdasd;
 
 // интерполяция 
@@ -51,17 +51,36 @@ const category = 'toys';
 
 //console.log(5===2);  строгое сравнение 
 
-const isChecked = false,
-        isClose = false;
+//const isChecked = false,
+//        isClose = false;
 
 //console.log(isChecked && isClose);   //  И  правда будет если оба оператора работает  два и более ответить
 
 
-console.log(isChecked || !isClose); // Или 
+//console.log(isChecked || !isClose); // Или 
 
-console.log(2 + 2 );
+//console.log(2 + 2 );
+
+//
+
+const numberOfFilms = +prompt("Сколько фильмов вы посмотрели?");
+//
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    private: false
+};
+
+const a = prompt("Один из последних просмотренных фильмов?",""),
+      b = prompt("На сколько оцените его?",""),
+      c = prompt("Один из последних просмотренных фильмов?",""),
+      d = prompt("На сколько оцените его?","");
 
 
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-
+console.log(personalMovieDB);
 
